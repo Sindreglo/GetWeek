@@ -1,0 +1,31 @@
+{
+  "name": "getweek",
+  "version": "1.0.0",
+  "description": "Helpful functions for week info.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sindreglo/GetWeek.git"
+  },
+  "keywords": [
+    "getweek"
+  ],
+  "author": "Sindreglo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sindreglo/GetWeek/issues"
+  },
+  "homepage": "https://github.com/Sindreglo/GetWeek#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "typescript": "^5.5.4"
+  }
+}
