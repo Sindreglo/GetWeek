@@ -3,8 +3,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getDatesFromWeek = getDatesFromWeek;
 exports.getDatesFromSameWeek = getDatesFromSameWeek;
-exports.getWeekNumber = getWeekNumber;
-exports.isSameWeek = isSameWeek;
 function getDatesFromWeek(week, year) {
     const dates = [];
     const date = new Date(year, 0, 1 + (week - 1) * 7);
@@ -24,12 +22,4 @@ function getDatesFromSameWeek(date) {
         firstDayOfWeek.setDate(firstDayOfWeek.getDate() + 1);
     }
     return weekDates;
-}
-function getWeekNumber(date) {
-    const firstDayOfYear = new Date(date.getFullYear(), 0, 1);
-    const pastDaysOfYear = (date.getTime() - firstDayOfYear.getTime()) / 86400000;
-    return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
-}
-function isSameWeek(date1, date2) {
-    return getWeekNumber(date1) === getWeekNumber(date2);
 }
